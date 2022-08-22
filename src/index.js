@@ -10,7 +10,7 @@ app.use(express.json())
 
 app.use(cors())
 app.get("/", (req, res) => {
-    res.status(200).send("Book Store API by Nishit Nalin Srivastava")
+    res.status(200).send("Book Store Rest API by Nishit Nalin Srivastava")
 })
 
 const PORT = process.env.PORT || 5000
