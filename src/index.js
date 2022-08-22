@@ -1,4 +1,5 @@
 console.log("Hello")
+const bookRoutes = require("./router/bookRoutes")
 const cors = require("cors")
 const dotenv = require("dotenv")
 const mongoose = require("mongoose")
@@ -12,6 +13,7 @@ app.use(cors())
 app.get("/", (req, res) => {
     res.status(200).send("Book Store Rest API by Nishit Nalin Srivastava")
 })
+app.use("/", bookRoutes)
 
 const PORT = process.env.PORT || 5000
 
