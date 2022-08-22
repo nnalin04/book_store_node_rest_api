@@ -13,7 +13,7 @@ app.use(cors())
 app.get("/", (req, res) => {
     res.status(200).send("Book Store Rest API by Nishit Nalin Srivastava")
 })
-app.use("/", bookRoutes)
+app.use("/book", bookRoutes)
 
 const PORT = process.env.PORT || 5000
 
